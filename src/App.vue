@@ -3,8 +3,8 @@
         <div class="container">
             <div class="header">
                 <a-menu class="menu" mode="horizontal" :selected-keys="['websites']" :overflowedIndicator="vnode"
-                    :items="[{ 'label': '首页', key: 'home' }, { 'label': '导航网', key: 'websites' }, { 'label': '热搜榜', key: 'hotnet' }]"
-                    @click="" />
+                    :items="[{ 'label': '首页', key: '/' }, { 'label': '导航网', key: 'websites' }, { 'label': '热搜榜', key: '/hotnet/' }]"
+                    @click="onClick" />
                 <div class="datetime">
                     <p class="time">{{ time }}</p>
                     <p class="date">{{ date }}</p>
@@ -42,6 +42,11 @@ const vnode = h(MenuOutlined, { class: 'hover-icon' });
 const items: any = ref([]);
 const keys: any = ref([]);
 
+const onClick = (data: any) => {
+    if (data.key !== "websites") {
+        window.location.href = `https://gwt805.github.io/${data.key}`;
+    }
+}
 const onChange = (activeKey: string) => {
     window.localStorage.setItem("activeKey", activeKey)
 }
