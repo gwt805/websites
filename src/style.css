@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   /* user-select: none; */
-  cursor: url("./assets/img/mouse.png"), default;
+  cursor: url("./assets/img/mouse.png"), default !important;
 }
 
 html,body {
@@ -26,8 +26,8 @@ html,body {
 
 /* 滚动条 */
 ::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -35,16 +35,16 @@ html,body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(124, 124, 151, 0.4);
+  background-color: rgba(255, 253, 253, 0.3);
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(68, 147, 199);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background-color: rgb(68, 147, 199);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*定义两端按钮的样式*/
