@@ -27,9 +27,9 @@
 <script setup lang="ts">
 import { theme } from 'antdv-next'
 import { getdata } from "@/api/data";
-import { h, ref, onMounted } from "vue";
 import card from './components/card.vue';
 import { MenuOutlined } from "@antdv-next/icons";
+import { h, ref, onMounted, onUnmounted } from "vue";
 
 const cron = ref();
 const date = ref('');
@@ -96,12 +96,10 @@ onMounted(() => {
     });
     
 })
+onUnmounted(() => clearInterval(cron.value))
 </script>
 
 <style scoped lang="less">
-.demo-spin-root {
-  padding: 8px;
-}
 .container {
     width: 100dvw;
     height: 100dvh;
@@ -136,6 +134,9 @@ onMounted(() => {
                 &::after,
                 &::before {
                     border-bottom: none;
+                }
+                &:hover {
+                    color: white;
                 }
             }
 
