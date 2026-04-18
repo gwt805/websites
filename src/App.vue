@@ -44,7 +44,7 @@ const keys: any = ref([]);
 
 const onClick = (data: any) => {
     if (data.key !== "websites") {
-        window.location.href = `https://gwt805.github.io/${data.key}`;
+        window.location.href = `https://gwt805.github.io/${data.key=='/'?'':data.key}`;
     }
 }
 const onChange = (activeKey: string) => {
@@ -220,12 +220,14 @@ onMounted(() => {
 
     .footer {
         height: 32px;
-        // border: 1px solid #ccc;
         display: flex;
         justify-content: center;
         align-items: center;
         color: #a0a4e5;
         background-color: rgba(255, 255, 255, 0.2);
+        img {
+            vertical-align: middle;
+        }
         span:not(:first-child) {
             margin-left: 10px;
         }
