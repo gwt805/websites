@@ -2,7 +2,7 @@
     <div class="card-container">
         <div class="itemlist" v-for="item in data">
             <h2 v-if="flag == '全部'"># {{ item.name }}</h2>
-            <div class="card">
+            <div class="card" :style="style">
                 <div class="card-item" v-for="itd in item.data" @click="npage(itd.link)">
                     <div class="div-img">
                         <img :src="itd.imgUrl" alt="icon" draggable="false">
@@ -21,9 +21,10 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue"
 import { RightOutlined } from "@antdv-next/icons";
 
-defineProps({
+const props = defineProps({
     flag: {
         type: String,
         required: true
@@ -33,7 +34,7 @@ defineProps({
         required: true
     }
 })
-
+const style= ref(props.flag !="全部"?{'margin-top': "11px"}:'')
 const npage = (url: string) => { window.open(url) };
 </script>
 

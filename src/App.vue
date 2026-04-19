@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="body">
-                <a-tabs v-model:activeKey="activeKey" centered :items="items" :moreIcon="vnode" :indicator="{size: 0}" @change="onChange"/>
+                <a-tabs v-model:activeKey="activeKey" tab-placement="left" centered :items="items" :moreIcon="vnode" :indicator="{size: 0}" @change="onChange"/>
             </div>
             <div class="footer">
                 <el-tooltip content="Github" :hide-after="0"><span><a onclick="window.open('https://github.com/gwt805')" target="_blank"><img src="./assets/img/github.svg"></a></span></el-tooltip>
@@ -169,16 +169,20 @@ onUnmounted(() => clearInterval(cron.value))
 
     .body {
         height: calc(100dvh - 82px);
-        padding: 0 15px;
+        // padding: 0 15px;
         background-color: rgba(255, 255, 255, 0.2);
         // 标签栏固定，不收缩
         ::v-deep(.ant-tabs) {
             height: 100%;
-            display: flex;
-            flex-direction: column;
+            // 如果是 垂直模式 注释下面两行
+            border-top: 1px solid rgba(255, 255, 255, 0.6);
+            // display: flex;
+            // flex-direction: column;
             .ant-tabs-nav {
                 margin-bottom: 0;
                 flex-shrink: 0;
+                // 垂直模式打开
+                margin-left: -5px;
                 // 去掉tabs白色下划线
                 // &::before {
                 //     border: none;
@@ -189,14 +193,18 @@ onUnmounted(() => clearInterval(cron.value))
                 flex: 1;
                 overflow-y: auto;
                 overflow-x: hidden;
+                
             }
 
             .ant-tabs-content {
                 height: 100%;
+                
             }
 
             .ant-tabs-tabpane {
                 height: 100%;
+                // 控制 内容区域的 padding
+                padding: 0 10px;
             }
             .ant-tabs-nav-more:hover {
                 color: white;
