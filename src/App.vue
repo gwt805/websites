@@ -3,7 +3,7 @@
         <div class="container">
             <div class="header">
                 <a-menu class="menu" mode="horizontal" :selected-keys="['websites']" :overflowedIndicator="vnode"
-                    :items="[{ 'label': '首页', key: '/' }, { 'label': '导航网', key: 'websites' }, { 'label': '热搜榜', key: '/hotnet/' }]"
+                    :items="[{ 'label': '首页', key: '/' }, { 'label': '导航网', key: 'websites/' }, { 'label': '热搜榜', key: 'hotnet/' }]"
                     @click="onClick" />
                 <div class="datetime">
                     <p class="time">{{ time }}</p>
@@ -12,13 +12,6 @@
             </div>
             <div class="body">
                 <a-tabs v-model:activeKey="activeKey" tab-placement="left" centered :items="items" :moreIcon="vnode" :indicator="{size: 0}" @change="onChange"/>
-            </div>
-            <div class="footer">
-                <el-tooltip content="Github" :hide-after="0"><span><a onclick="window.open('https://github.com/gwt805')" target="_blank"><img src="./assets/img/github.svg"></a></span></el-tooltip>
-                <el-tooltip content="GitCode" :hide-after="0"><span><a onclick="window.open('https://gitcode.com/gwt805')" target="_blank"><img src="./assets/img/gitcode.svg"></a></span></el-tooltip>
-                <el-tooltip content="Gitee" :hide-after="0"><span><a onclick="window.open('https://gitee.com/gwt805')" target="_blank"><img src="./assets/img/gitee.svg"></a></span></el-tooltip>
-                <el-tooltip content="<img src='./gzh.jpg' style='width:100px;' />" raw-content :hide-after="0"><span><img src="./assets/img/gzh.svg"></span></el-tooltip>
-                <span>Copyright © gwt805</span>
             </div>
         </div>
     </a-config-provider>
@@ -43,7 +36,7 @@ const items: any = ref([]);
 const keys: any = ref([]);
 
 const onClick = (data: any) => {
-    if (data.key !== "websites") {
+    if (data.key !== "/websites/") {
         window.location.href = `https://gwt805.github.io/${data.key=='/'?'':data.key}`;
     }
 }
@@ -105,7 +98,7 @@ onUnmounted(() => clearInterval(cron.value))
     height: 100dvh;
     overflow: hidden;
     user-select: none;
-    background-image: url("./assets/img/background.jpg"); //https://img.8845.top/good   https://img.8845.top/acg/loli2.php
+    background-image: url("./assets/img/background.jpg"); //https://img.8845.top/good   https://img.8845.top/acg/loli2.php ./assets/img/background.jpg
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -168,7 +161,7 @@ onUnmounted(() => clearInterval(cron.value))
     }
 
     .body {
-        height: calc(100dvh - 82px);
+        height: calc(100dvh - 50px);
         // padding: 0 15px;
         background-color: rgba(255, 255, 255, 0.2);
         // 标签栏固定，不收缩
@@ -209,8 +202,14 @@ onUnmounted(() => clearInterval(cron.value))
             .ant-tabs-nav-more:hover {
                 color: white;
             }
+            .ant-tabs-nav {
+                div:hover {
+                    color: white;
+                }
+            }
             .ant-tabs-nav-list .ant-tabs-tab .ant-tabs-tab-btn {
                 font-size: 16px;
+                
                 &:hover {
                     color: white;
                 }
@@ -219,26 +218,9 @@ onUnmounted(() => clearInterval(cron.value))
             .ant-tabs-nav-list .ant-tabs-tab-active .ant-tabs-tab-btn {
                 color: white;
             }
-            
-            
         }
         ::v-deep(.ant-tabs .ant-tabs-tab-btn:focus:not(:focus-visible), .ant-tabs .ant-tabs-tab-remove:focus:not(:focus-visible), .ant-tabs .ant-tabs-tab-btn:active, .ant-tabs .ant-tabs-tab-remove:active) {
             color: white;
-        }
-    }
-
-    .footer {
-        height: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #a0a4e5;
-        background-color: rgba(255, 255, 255, 0.2);
-        img {
-            vertical-align: middle;
-        }
-        span:not(:first-child) {
-            margin-left: 10px;
         }
     }
 }

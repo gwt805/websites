@@ -1013,6 +1013,90 @@
                 "link": "https://fontawesome.com/",
                 "imgUrl": "https://fontawesome.com/favicon.ico",
                 "desc": "互联网图标库及工具包"
+            },
+            {
+                "name": "Lucide",
+                "link": "https://lucide.dev/",
+                "imgUrl": "https://lucide.dev/logo.light.svg",
+                "desc": "美丽且一致的图标"
+            },
+            {
+                "name": "Phosphor Icons",
+                "link": "https://phosphoricons.com/",
+                "imgUrl": "https://phosphoricons.com/favicon.ico",
+                "desc": "Phosphor 是一个灵活的图标系列，用于接口、图表、演示——其实什么都行"
+            },
+            {
+                "name": "Heroicons",
+                "link": "heroicons.com",
+                "imgUrl": "https://heroicons.com/_next/static/media/favicon-32x32.2a23e45f.png",
+                "desc": "由Tailwind CSS制作者手工制作的精美SVG图标"
+            },
+            {
+                "name": "Tabler Icons",
+                "link": "https://tabler.io/icons",
+                "imgUrl": "https://tabler.io/favicon.ico",
+                "desc": "一套完整的图标集，包含6146个图标，线条粗细和间距完美，准备好用于Figma、应用程序和设计系统"
+            },
+            {
+                "name": "Iconoir",
+                "link": "https://iconoir.com/",
+                "imgUrl": "https://iconoir.com/favicon.ico",
+                "desc": "高品质的免费图标精选"
+            },
+            {
+                "name": "Google Material",
+                "link": "https://fonts.google.com/icons",
+                "imgUrl": "https://www.gstatic.com/images/icons/material/apps/fonts/1x/catalog/v5/favicon.svg",
+                "desc": "Material Symbols 是我们最新的图标，它将 2500 多个字形整合到一个字体文件中，并提供了多种设计变体"
+            },
+            {
+                "name": "Bootstrap Icons",
+                "link": "https://icons.getbootstrap.com/",
+                "imgUrl": "免费、高质量、开源图标库，拥有超过2000个图标。你可以随意添加它们——SVG、SVG精灵或网页字体。在任何项目中使用它们，无论是否使用Bootstrap",
+                "desc": "https://icons.getbootstrap.com/assets/img/favicons/favicon.ico"
+            },
+            {
+                "name": "Flaticon",
+                "link": "https://www.flaticon.com/",
+                "imgUrl": "https://media.flaticon.com/dist/min/img/favicon.ico",
+                "desc": "下载免费图标和贴纸，用于你的项目。由设计师为设计师制作的资源。PNG、SVG、EPS、PSD 和 CSS 格式"
+            },
+            {
+                "name": "The Noun Project",
+                "link": "https://thenounproject.com/",
+                "imgUrl": "https://thenounproject.com/favicon.ico",
+                "desc": "全球最大、最多样化的高品质矢量图标和照片收藏。由真实的人类创作者精心制作和策划"
+            },
+            {
+                "name": "SVG Repo",
+                "link": "https://www.svgrepo.com/",
+                "imgUrl": "https://www.svgrepo.com/logo.svg",
+                "desc": "500,000+ 开放许可 SVG 矢量和图标"
+            },
+            {
+                "name": "Remix Icon",
+                "link": "https://remixicon.com/",
+                "imgUrl": "https://remixicon.com/favicon.ico",
+                "desc": "为设计师和开发者精心设计的开源中立风格系统符号。所有图标均免费供个人和商业使用。"
+            },
+            {
+                "name": "Yesicon",
+                "link": "https://yesicon.app/",
+                "imgUrl": "https://yesicon.app/favicon.svg",
+                "desc": "223 组开源、免费的图标库，开发者 和 设计师 的 CV 好帮手"
+            },
+            {
+                "name": "IconBuddy",
+                "link": "https://iconbuddy.com/",
+                "imgUrl": "https://iconbuddy.com/favicon.ico",
+                "desc": "开源图标：快速搜索，全球500K+专业人士使用"
+            },
+            {
+                "name": "Icons8",
+                "link": "https://icons8.com/icons",
+                "imgUrl": "https://goodies.icons8.com/web/common/logoIcons.svg",
+                "desc": "超过1万个图标的大型图标包，这样你就能为所有设计找到视觉统一的图标"
             }
         ]
     },
