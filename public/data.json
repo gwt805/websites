@@ -921,12 +921,6 @@
         "name": "免费 API",
         "data": [
             {
-                "name": "韩小寒API",
-                "link": "https://api.vvhan.com/",
-                "imgUrl": "https://api.aa1.cn/assets/img/favicon.png",
-                "desc": "韩小寒API"
-            },
-            {
                 "name": "Hitokoto-一言",
                 "link": "https://hitokoto.cn/",
                 "imgUrl": "https://api.aa1.cn/assets/img/favicon.png",
@@ -1432,6 +1426,12 @@
                 "link": "https://pan.baidu.com/",
                 "imgUrl": "https://img0.baidu.com/it/u=199767689,906139898&fm=253&fmt=auto&app=138&f=PNG?w=373&h=348",
                 "desc": "百度网盘"
+            },
+            {
+                "name": "光鸭云盘",
+                "link": "https://www.guangyapan.com/",
+                "imgUrl": "https://www.guangyapan.com/icon.png",
+                "desc": "不限速，注册即享 2T 空间，会员畅享 500T 空间，支持磁力链、ed2k、迅雷链、http、https 批量云添加"
             },
             {
                 "name": "天翼云盘",
