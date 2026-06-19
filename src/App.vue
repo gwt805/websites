@@ -36,7 +36,7 @@ const items: any = ref([]);
 const keys: any = ref([]);
 
 const onClick = (data: any) => {
-    if (data.key !== "/websites/") {
+    if (data.key !== "websites/") {
         window.location.href = `https://gwt805.github.io/${data.key=='/'?'':data.key}`;
     }
 }
