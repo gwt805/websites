@@ -2,7 +2,7 @@
     <a-config-provider :theme="{ algorithm: theme.defaultAlgorithm }">
         <div class="container">
             <div class="header">
-                <a-menu class="menu" mode="horizontal" :selected-keys="['websites']" :overflowedIndicator="vnode"
+                <a-menu class="menu" mode="horizontal" :selected-keys="['websites/']" :overflowedIndicator="vnode"
                     :items="[{ 'label': '首页', key: '/' }, { 'label': '导航网', key: 'websites/' }, { 'label': '热搜榜', key: 'hotnet/' }]"
                     @click="onClick" />
                 <div class="datetime">
