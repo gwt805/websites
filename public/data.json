@@ -613,6 +613,12 @@
                 "link": "https://elevenlabs-ui-vue.com/",
                 "imgUrl": "https://elevenlabs-ui-vue.com/favicon.ico",
                 "desc": "这是一个专为 AI 语音与语音代理（Voice Agent）场景打造的 Vue UI 组件库"
+            },
+            {
+                "name": "Vuetify",
+                "link": "https://vuetifyjs.com/zh-Hans/",
+                "imgUrl": "https://vuetifyjs.com/favicon.ico",
+                "desc": "一套完整的设计系统开箱即用"
             }
         ]
     },
